@@ -1,0 +1,22 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "OnFoot",
+            "id": "8b99a112-b86f-4e52-88d6-fd6b7fef01cc",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Button",
+                    "id": "bccc3ec7-9205-4778-b5c6-c67ff956a2af",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}
