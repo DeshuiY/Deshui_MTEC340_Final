@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Congratulation.unity
     guid: 998aefe9c90476640924d8f25fe3b9a2
+  - enabled: 1
+    path: Assets/Scenes/Pause.unity
+    guid: 4f3e6728dcf6a06428466a4369e3195b
   m_configObjects: {}
