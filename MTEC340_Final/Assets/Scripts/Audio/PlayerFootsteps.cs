@@ -4,12 +4,12 @@ public class PlayerFootsteps : MonoBehaviour
 {
     public AudioSource footstepsAudioSource; 
     public float walkingThreshold = 0.1f; 
-    private Rigidbody playerRigidbody; 
+
+    private CharacterController characterController;
 
     void Start()
     {
-        
-        playerRigidbody = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();
 
         if (footstepsAudioSource == null)
         {
@@ -19,12 +19,11 @@ public class PlayerFootsteps : MonoBehaviour
 
     void Update()
     {
-        
-        if (playerRigidbody != null && footstepsAudioSource != null)
+        if (characterController != null && footstepsAudioSource != null)
         {
-            if (playerRigidbody.velocity.magnitude > walkingThreshold)
+            
+            if (characterController.velocity.magnitude > walkingThreshold)
             {
-                
                 if (!footstepsAudioSource.isPlaying)
                 {
                     footstepsAudioSource.Play();
@@ -32,7 +31,6 @@ public class PlayerFootsteps : MonoBehaviour
             }
             else
             {
-                
                 if (footstepsAudioSource.isPlaying)
                 {
                     footstepsAudioSource.Stop();
