@@ -3,8 +3,8 @@ using UnityEngine;
 public class EnemyBehavior : MonoBehaviour
 {
     private bool isDead = false; 
+    public int points = 1; 
 
-    
     public void TakeDamage()
     {
         if (isDead) return; 
@@ -15,6 +15,12 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Die()
     {
+        
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.AddScore(points);
+        }
+
        
         Destroy(gameObject);
     }
