@@ -36,20 +36,6 @@ public class CountdownTimer : MonoBehaviour
             timerText.text = $"Time Left: {Mathf.Ceil(timer)}s"; 
         }
         
-        if (timer <= 100f) 
-        {
-            timerText.color = Color.green;
-        }
-        
-        if (timer <= 60f) 
-        {
-            timerText.color = Color.yellow;
-        }
-        
-        if (timer <= 20f) 
-        {
-            timerText.color = Color.red;
-        }
 
     }
 
