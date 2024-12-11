@@ -9,7 +9,7 @@ public class ScoreUI : MonoBehaviour
     {
         if (ScoreManager.Instance != null)
         {
-            scoreText.text = "Grade: " + ScoreManager.Instance.score;
+            scoreText.text = "Score: " + ScoreManager.Instance.score;
         }
     }
 }

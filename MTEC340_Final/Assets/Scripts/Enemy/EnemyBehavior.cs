@@ -7,7 +7,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public void TakeDamage()
     {
-        if (isDead) return; 
+        if (isDead) return;
 
         isDead = true; 
         Die(); 
@@ -15,13 +15,10 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Die()
     {
-        
         if (ScoreManager.Instance != null)
         {
             ScoreManager.Instance.AddScore(points);
         }
-
-       
         Destroy(gameObject);
     }
 }

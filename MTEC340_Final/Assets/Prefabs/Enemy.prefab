@@ -135,7 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 3
+  _rotationSpeed: 100
   _obstacleRange: 5
+  _turnDistance: 1.5
   _fireballPrefab: {fileID: 5236016791218838927, guid: c2879d9a8bfa50b4890088f4c1967667, type: 3}
   _fireball: {fileID: 0}
 --- !u!114 &3227840903535316668
@@ -150,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9cc557a8a41a443af353e8fc13b0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 10
 --- !u!54 &2692663756583838786
 Rigidbody:
   m_ObjectHideFlags: 0
