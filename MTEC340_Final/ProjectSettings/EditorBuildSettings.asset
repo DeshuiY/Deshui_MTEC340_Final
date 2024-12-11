@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pause.unity
     guid: 4f3e6728dcf6a06428466a4369e3195b
+  - enabled: 1
+    path: Assets/Scenes/FaliureScene.unity
+    guid: c36889f06cdaf1243bc1e48c50d95d47
   m_configObjects: {}
