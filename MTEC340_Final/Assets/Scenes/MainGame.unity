@@ -1043,7 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1537775889}
-  score: 1
+  score: 0
 --- !u!1 &242531037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56656bfd5f080e44b26ea7f86e278ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 150
+  timeLimit: 300
   failureSceneName: FaliureScene
 --- !u!4 &242531039
 Transform:
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79412bf46824c2747b9b1c6ca9febdd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 150
+  timeLimit: 300
   timerText: {fileID: 1488469375}
 --- !u!1001 &256625334
 PrefabInstance:
@@ -4937,7 +4937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -186.1, y: 210}
+  m_AnchoredPosition: {x: -229.9, y: 184.1}
   m_SizeDelta: {x: 213.11, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1498527692
@@ -5201,7 +5201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -193, y: 257}
+  m_AnchoredPosition: {x: -237.3, y: 236.84}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1537775889

@@ -4,6 +4,7 @@ using UnityEngine;
 public class ReactiveTarget : MonoBehaviour
 {
     [SerializeField] float _deathAnimTime = 1.5f;
+    public int points = 1;
 
     // This code will be triggered once the entity has been shot.
     public void ReactToHit()
@@ -39,6 +40,12 @@ public class ReactiveTarget : MonoBehaviour
         transform.rotation = endRotation;
 
         yield return new WaitForSeconds(1);
+        
+        if (ScoreManager.Instance != null)
+        {
+            Debug.Log("Updating score");
+            ScoreManager.Instance.AddScore(points);
+        }
 
         Destroy(gameObject);
     }

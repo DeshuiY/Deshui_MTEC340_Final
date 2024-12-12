@@ -15,8 +15,10 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Die()
     {
+        Debug.Log("Die function called");
         if (ScoreManager.Instance != null)
         {
+            Debug.Log("Updating score");
             ScoreManager.Instance.AddScore(points);
         }
         Destroy(gameObject);

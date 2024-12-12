@@ -48,5 +48,6 @@ public class CountdownTimer : MonoBehaviour
         timer += additionalTime; 
         UpdateTimerUI();
         Debug.Log($"Added {additionalTime} seconds! Current timer: {timer}s");
+        
     }
 }

@@ -3,14 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class TimerManager : MonoBehaviour
 {
-    public float timeLimit = 60f; 
+    public float timeLimit = 150f; 
     private float timer;
 
     public string failureSceneName = "FailureScene"; 
 
     void Start()
     {
-        timer = timeLimit; 
+        timer = timeLimit;
+        
     }
 
     void Update()
@@ -32,4 +33,5 @@ public class TimerManager : MonoBehaviour
     {
         return Mathf.Max(0, timer); 
     }
+    
 }
